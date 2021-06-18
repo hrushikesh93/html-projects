@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table,tr,td
+        {
+            border-collapse: collapse;
+            color: black;
+            text-align: center;
+            border: solid black;
+            width: 12%;
+            background-color: lightgreen;
+        }
+        table
+        {
+            margin:10%;
+        }
+    </style>
+        <script>
+            document.write("<table><tr><th colspan='3'>sqares and cube</th></tr> <tr><th>Number</th><th>sqares</th><th>cube</th></tr>")
+            for(var n=0;n<10;n++)
+            {
+                document.write("<tr><td>"+n+"</td><td>"+n*n+"</td><td>"+n*n*n+"</td></tr>")
+            }
+            document.write("</table>")
+        </script>
+</head>
+</html>
