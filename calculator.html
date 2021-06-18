@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+    <script>
+
+		function display(val)
+		{
+			document.getElementById("x").value+=val
+		}
+		
+
+		function solve()
+		{
+			let x = document.getElementById("x").value
+			let y = eval(x)
+			document.getElementById("x").value = y
+		}
+		
+
+		
+	</script>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend style="color: green;">calculator.programe: code("in html")</legend>
+            <label style="color: green; text-align: center;"><H3 style="color: green;" class="cursor"> ☠ Hrushikesha ☠ </H3></label>
+        <table border="2px">
+            <tr>
+                <th colspan="4" >calculator</th>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="text" placeholder="0" id="x" style="color: #000;" ></td>
+                <td><input type="reset" value="C" id="a"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="display(this.value)"></td>
+                <td><input type="button" value="8" onclick="display(this.value)"></td>
+                <td><input type="button" value="9" onclick="display(this.value)"></td>
+                <td><input type="button" value="-" onclick="display(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="display(this.value)"></td>
+                <td><input type="button" value="5" onclick="display(this.value)"></td>
+                <td><input type="button" value="6" onclick="display(this.value)"></td>
+                <td><input type="button" value="/" onclick="display(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="display(this.value)"></td>
+                <td><input type="button" value="2" onclick="display(this.value)"></td>
+                <td><input type="button" value="3" onclick="display(this.value)"></td>
+                <td><input type="button" value="*" onclick="display(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="display(this.value)"></td>
+                <td><input type="button" value="0" onclick="display(this.value)"></td>
+                <td><input type="button" value="=" onclick="solve()"></td>
+                <td><input type="button" value="+" onclick="display(this.value)"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><label>----- ☠ dark king ☠ -----</label></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+<style>
+    th,td
+    {
+        color: green;
+        padding-left: 0.2cm;
+        padding-top: 0.2cm;
+        padding-bottom: 0.2cm;
+        padding-right: 0.2cm;
+    }
+    body
+    {
+        background-color: #000;
+    }
+    table
+    {
+        text-align: center;
+        border-radius: 1ch;
+        align-self: center;
+        padding-left: 0.2cm;
+        padding-right: 0.2cm;
+    }
+    input
+    {
+        color: green;
+        background-color: black;
+        width: 100%;
+        
+        
+    }
+    input:hover
+    {
+        color: red;
+    }
+    input#x
+    {
+        color: #000;
+        background-color: green;
+    }
+    input#x::placeholder
+    {
+        color: #000;
+    }
+
+    .cursor{
+            font-weight: 700;
+            animation: 1s blink step-end infinite;
+        }
+
+        @keyframes blink{
+            from , to {
+                color: transparent;
+            }
+            50% {
+                color: green;
+            }
+        }
+    
+</style>
+</html>
