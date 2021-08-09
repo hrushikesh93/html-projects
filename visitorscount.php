@@ -19,9 +19,9 @@
   else
       $_SESSION['views']=1;
         
-  echo"<h1 style='color: red;'>no of people visited </h1> <hr><h2 style='color: green;'>".$_SESSION['views']."</h2><hr>";
+  echo"<h1 style='color: red;'>no of people visited </h1> <h2 style='color: green;'>".$_SESSION['views']."</h2>";
 
-  echo "<p style='text-align: right;'>hrushikesha_1CR18CS074</p>";
+  echo "<p style='text-align: center;'>indraja_1CR18CS075</p>";
 
 
   ?>
