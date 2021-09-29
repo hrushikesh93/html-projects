@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <link rel="icon" href="webpageimages/logo.png" type="image/x-icon">
+    <link rel="icon" href="webpageimages/logo.png">
     <title>Web FuN</title>
 </head>
 <body>
     <div class="b1">
-        <h1>hello <small style="border: 2px; color: green; font-style: oblique;" class="welcome">welcome</small> to my webpage</h1>
+        <h1>hello <small style="border: 2px; color: green; font-style: oblique;" class="welcome">welcome</small> to my WebFuN</h1>
     </div>
     <div class="b2">
         <fieldset style="color: black; ">
-            <legend >find me :</legend>
+            <legend >Find me :</legend>
             <ul>
                 <li style="color: green;"><strong style="color: black;">contact:</strong>       8073362455</li>
                 <li style="color: green;"><strong style="color: black;">mail:</strong>       mharshrushi93@gmail.com</li>
@@ -23,7 +23,7 @@
     </div> <br> <br> 
     <div class="b3">
         <fieldset style="color: white;  border-color: black;">
-            <legend> to watch :</legend>
+            <legend> To watch :</legend>
             <table  border="2px" >
                 <tr>
                     <th colspan="4">entertainment: <strong style="color: black;">click on anyone to watch</strong></th>
@@ -33,17 +33,44 @@
                 </tr>
             </table>
         </fieldset>
+            <br> <br> <br>
+            <!-----------------------------------one window----------------------------------------------->
+            <div class="container">
+              <div class="top">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            
+              <div class="content">
+                <h3>if you want to listen to songs then click here </h3>
+                <a href="webfunpages/songs.html"><button >take me</button></a>
+              </div>
+            </div>
+            <!-----------------------------------second window----------------------------------------------->
+            <div class="container">
+                <div class="top">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              
+                <div class="content">
+                  <h3>if you want to watch videos then click here </h3>
+                  <a href="webfunpages/video.html"><button>take me</button></a>
+                </div>
+              </div>
 
              <br> <br> <br>
         <fieldset style="color: black; ">
-            <legend> to play :</legend>
+            <legend> To play :</legend>
             <table border="2px">
                 <tr>
                     <th colspan="4">games: <strong style="color: black;">click on anyone to play</strong></th>
                 </tr>
                 <tr>
                     <td><a href="https://g.co/kgs/72qoEj"><img src="webpageimages/tictactoe.png" alt="tictactoe"></a></td>
-                    <td><a href="https://g.co/kgs/zYy8MA"><img src="webpageimages/minesweeper.png" alt="minesweeper" width="200" height="180"></a></td>
+                    <td><a href="https://g.co/kgs/MLUkeX"><img src="webpageimages/minesweeper.png" alt="minesweeper" width="200" height="180"></a></td>
                     <td><a href="https://g.co/kgs/NDuRz2"><img src="webpageimages/snake.png" alt="snake" width="200" height="180"></a></td>
                 </tr>
                 <tr>
@@ -90,5 +117,37 @@
         color: gray;
     }
     
+    .dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container {
+  border: 3px solid #7c7c7c;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width: 30%;
+  display: inline-block;
+}
+
+.top {
+  padding: 10px;
+  background: #666565;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.content {
+  padding: 10px;
+  background-color: #7c7c7c;
+}
+
+button {
+    color: white;
+    background-color: rgb(75, 73, 73);
+}
 </style>
 </html>
